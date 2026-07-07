@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--
+  Reusable footer fragment.
+  Usage: <div th:replace="~{fragments/footer :: footer}"></div>
+-->
+<body>
+<footer th:fragment="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Brand + about -->
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <img th:src="@{/images/logo.png}" src="/images/logo.png" alt="Unique Masale logo"
+                         width="48" height="48" style="border-radius:50%;">
+                    <h5 class="mb-0 brand-font">Unique Masale</h5>
+                </div>
+                <p class="mb-3" style="color:#C9B79C;">
+                    Authentic homemade Indian spices &amp; traditional food products,
+                    prepared with love, premium ingredients and no artificial colours.
+                </p>
+                <div class="social">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a th:href="'https://wa.me/918830911730'" href="https://wa.me/918830911730"
+                       aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick links -->
+            <div class="col-lg-4 col-md-6">
+                <h5 class="mb-3">Quick Links</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#home">Home</a></li>
+                            <li class="mb-2"><a href="#about">About Us</a></li>
+                            <li class="mb-2"><a href="#products">Products</a></li>
+                            <li class="mb-2"><a href="#why">Why Choose Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#reviews">Reviews</a></li>
+                            <li class="mb-2"><a href="#gallery">Gallery</a></li>
+                            <li class="mb-2"><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-4">
+                <h5 class="mb-3">Get in Touch</h5>
+                <p class="mb-2" style="color:#C9B79C;">
+                    <i class="bi bi-telephone-fill me-2 text-saffron"></i>
+                    <a href="tel:+918830911730">+91 8830911730</a>
+                </p>
+                <p class="mb-3" style="color:#C9B79C;">
+                    <i class="bi bi-whatsapp me-2 text-saffron"></i>
+                    <a th:href="'https://wa.me/918830911730'" href="https://wa.me/918830911730">Chat on WhatsApp</a>
+                </p>
+                <a th:href="'https://wa.me/918830911730'" href="https://wa.me/918830911730"
+                   class="btn btn-whatsapp px-4">
+                    <i class="bi bi-whatsapp me-1"></i> Order Now
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            &copy; <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}">2026</span>
+            Unique Masale &amp; Food Products. All rights reserved. &nbsp;|&nbsp;
+            Call us: <a href="tel:+918830911730">+91 8830911730</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--
+  Reusable sticky navigation bar.
+  Usage: <div th:replace="~{fragments/navbar :: navbar}"></div>
+-->
+<body>
+<nav th:fragment="navbar" id="mainNav" class="navbar navbar-expand-lg fixed-top py-2">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#home">
+            <img th:src="@{/images/logo.png}" src="/images/logo.png" alt="Unique Masale logo">
+            <span class="brand-text">
+                <span class="brand-name d-block">Unique Masale</span>
+                <span class="brand-tag">&amp; FOOD PRODUCTS</span>
+            </span>
+        </a>
+
+        <!-- Mobile toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2 text-saffron"></i>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why">Why Choose Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
