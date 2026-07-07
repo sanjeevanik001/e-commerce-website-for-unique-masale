@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Masale &amp; Food Products | Authentic Homemade Indian Spices</title>
+    <meta name="description" content="Unique Masale & Food Products offers authentic homemade Indian spices and traditional Maharashtrian food products, prepared hygienically with premium ingredients and no artificial colours.">
+    <meta name="theme-color" content="#E8871E">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- Page loader -->
+<div id="loader" aria-hidden="true">
+    <div class="spinner" role="status"><span class="sr-only"></span></div>
+</div>
+
+<!-- Navbar -->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top py-2">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <img src="/images/logo.png" alt="Unique Masale logo">
+            <span class="brand-text">
+                <span class="brand-name d-block">Unique Masale</span>
+                <span class="brand-tag">&amp; FOOD PRODUCTS</span>
+            </span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2 text-saffron"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why">Why Choose Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 reveal">
+                    <span class="badge-pill mb-3 d-inline-block">
+                        <i class="bi bi-stars me-1"></i> 100% Homemade &amp; Hygienic
+                    </span>
+                    <h1 class="mb-3">Authentic Homemade Spices &amp; Traditional Food Products</h1>
+                    <p class="lead mb-4">Bringing the rich taste of homemade Indian spices and traditional recipes directly to your kitchen.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#products" class="btn btn-saffron btn-lg"><i class="bi bi-bag-heart me-1"></i> View Products</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4"><i class="bi bi-telephone me-1"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6 reveal">
+                    <img src="/images/about.png" alt="Homemade spices being prepared" class="about-img" loading="lazy">
+                </div>
+                <div class="col-lg-6 reveal">
+                    <span class="eyebrow">About Us</span>
+                    <h2 class="section-title mb-3">Made at Home, With Love &amp; Tradition</h2>
+                    <p style="color:var(--muted);"><strong>Unique Masale &amp; Food Products</strong> prepares homemade spices and traditional food items using carefully selected ingredients, hygienic preparation methods and authentic family recipes &mdash; with absolutely no compromise on quality.</p>
+                    <p style="color:var(--muted);">Every batch is crafted the traditional Maharashtrian way, so each dish you cook carries the same warmth and flavour as a home-cooked meal.</p>
+                    <div class="mt-4">
+                        <div class="about-highlight"><i class="bi bi-check-circle-fill"></i><span>Carefully selected, premium quality ingredients</span></div>
+                        <div class="about-highlight"><i class="bi bi-check-circle-fill"></i><span>Hygienically prepared in small, fresh batches</span></div>
+                        <div class="about-highlight"><i class="bi bi-check-circle-fill"></i><span>Authentic recipes with no artificial colours</span></div>
+                    </div>
+                    <a href="#products" class="btn btn-saffron mt-3">Explore Our Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section pattern-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Our Products</span>
+                <h2 class="section-title">A Spice for Every Recipe</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Freshly ground masalas and traditional homemade food products &mdash; search or filter to find your favourite.</p>
+            </div>
+            <div class="search-wrap reveal">
+                <i class="bi bi-search"></i>
+                <label for="productSearch" class="sr-only">Search products</label>
+                <input type="text" id="productSearch" placeholder="Search products..." autocomplete="off">
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 reveal">
+                <button class="filter-btn active" data-filter="all" type="button">All</button>
+                <button class="filter-btn" data-filter="powder" type="button">Powders</button>
+                <button class="filter-btn" data-filter="masala" type="button">Masala Blends</button>
+                <button class="filter-btn" data-filter="food" type="button">Food Products</button>
+            </div>
+            <div class="row g-4" id="productGrid"></div>
+            <div id="noResults" class="no-results">
+                <i class="bi bi-emoji-frown fs-2 d-block mb-2"></i>
+                No products match your search. Try a different keyword.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Why Choose Us</span>
+                <h2 class="section-title">The Unique Masale Promise</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Quality you can taste and trust in every single pinch.</p>
+            </div>
+            <div class="row g-4" id="whyGrid"></div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section pattern-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Customer Reviews</span>
+                <h2 class="section-title">Loved by Home Cooks &amp; Chefs</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Real words from families and businesses who cook with our masalas.</p>
+            </div>
+            <div class="row g-4" id="reviewGrid"></div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Gallery</span>
+                <h2 class="section-title">A Feast for the Eyes</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">A glimpse of our spices, ingredients and homemade goodness.</p>
+            </div>
+            <div class="gallery reveal">
+                <img src="/images/gallery-1.png" alt="Colourful array of Indian spices" loading="lazy">
+                <img src="/images/garam-masala.png" alt="Garam masala with whole spices" loading="lazy">
+                <img src="/images/gallery-3.png" alt="Whole spices close up" loading="lazy">
+                <img src="/images/gallery-2.png" alt="Traditional Indian thali meal" loading="lazy">
+                <img src="/images/pickles.png" alt="Homemade mango pickle" loading="lazy">
+                <img src="/images/gallery-4.png" alt="Packing homemade spices" loading="lazy">
+                <img src="/images/ladoo.png" alt="Homemade ladoo sweets" loading="lazy">
+                <img src="/images/red-chilli.png" alt="Red chilli powder" loading="lazy">
+                <img src="/images/turmeric.png" alt="Turmeric powder" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section pattern-bg">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Contact Us</span>
+                <h2 class="section-title">Let&apos;s Get Cooking Together</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Place an order or ask us anything &mdash; we&apos;d love to hear from you.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5 reveal">
+                    <div class="contact-card">
+                        <div class="contact-info-item">
+                            <span class="icon"><i class="bi bi-telephone-fill"></i></span>
+                            <div>
+                                <p class="mb-0" style="color:var(--muted);font-size:.85rem;">Call us</p>
+                                <a href="tel:+918830911730" class="fw-semibold" style="color:var(--ink);">+91 8830911730</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                            <div>
+                                <p class="mb-0" style="color:var(--muted);font-size:.85rem;">WhatsApp</p>
+                                <a href="https://wa.me/918830911730" class="fw-semibold" style="color:var(--ink);">Chat &amp; order instantly</a>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/918830911730" class="btn btn-whatsapp w-100 mb-4"><i class="bi bi-whatsapp me-1"></i> Message on WhatsApp</a>
+                        <iframe class="map-embed" title="Our location" src="https://www.google.com/maps?q=Pune,Maharashtra,India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal">
+                    <div class="contact-card">
+                        <div class="alert alert-info" role="alert">
+                            <i class="bi bi-info-circle-fill me-1"></i>
+                            This is a static preview. In the running Spring Boot app this form is validated and processed server-side.
+                        </div>
+                        <form onsubmit="return false;" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your full name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fw-semibold">Phone</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-saffron px-4"><i class="bi bi-send me-1"></i> Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <img src="/images/logo.png" alt="Unique Masale logo" width="48" height="48" style="border-radius:50%;">
+                    <h5 class="mb-0 brand-font">Unique Masale</h5>
+                </div>
+                <p class="mb-3" style="color:#C9B79C;">Authentic homemade Indian spices &amp; traditional food products, prepared with love, premium ingredients and no artificial colours.</p>
+                <div class="social">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/918830911730" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h5 class="mb-3">Quick Links</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#home">Home</a></li>
+                            <li class="mb-2"><a href="#about">About Us</a></li>
+                            <li class="mb-2"><a href="#products">Products</a></li>
+                            <li class="mb-2"><a href="#why">Why Choose Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#reviews">Reviews</a></li>
+                            <li class="mb-2"><a href="#gallery">Gallery</a></li>
+                            <li class="mb-2"><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="mb-3">Get in Touch</h5>
+                <p class="mb-2" style="color:#C9B79C;"><i class="bi bi-telephone-fill me-2 text-saffron"></i><a href="tel:+918830911730">+91 8830911730</a></p>
+                <p class="mb-3" style="color:#C9B79C;"><i class="bi bi-whatsapp me-2 text-saffron"></i><a href="https://wa.me/918830911730">Chat on WhatsApp</a></p>
+                <a href="https://wa.me/918830911730" class="btn btn-whatsapp px-4"><i class="bi bi-whatsapp me-1"></i> Order Now</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            &copy; <span id="year">2026</span> Unique Masale &amp; Food Products. All rights reserved. &nbsp;|&nbsp;
+            Call us: <a href="tel:+918830911730">+91 8830911730</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating buttons -->
+<a href="https://wa.me/918830911730" class="float-whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+<button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Render data client-side (mirrors the Spring Boot model data) -->
+<script>
+    const WHATSAPP = "918830911730";
+    const products = [
+        {name:"Red Chilli Powder", description:"Fiery, vibrant chilli powder ground from sun-dried red chillies for bold colour and heat.", image:"red-chilli.png", category:"powder"},
+        {name:"Turmeric Powder", description:"Pure golden turmeric with a warm aroma and natural health benefits for everyday cooking.", image:"turmeric.png", category:"powder"},
+        {name:"Coriander Powder", description:"Freshly ground coriander seeds delivering a mild, earthy fragrance to any dish.", image:"coriander.png", category:"powder"},
+        {name:"Garam Masala", description:"A classic blend of hand-roasted whole spices that adds warmth and depth to curries.", image:"garam-masala.png", category:"masala"},
+        {name:"Goda Masala", description:"Authentic Maharashtrian sweet-spice blend with coconut, essential for traditional recipes.", image:"goda-masala.png", category:"masala"},
+        {name:"Kala Masala", description:"Bold dark-roasted Maharashtrian masala with a rich, smoky and spicy character.", image:"kala-masala.png", category:"masala"},
+        {name:"Kitchen King Masala", description:"An all-rounder blend that makes everyday vegetables and gravies taste restaurant-style.", image:"kitchen-king.png", category:"masala"},
+        {name:"Biryani Masala", description:"Aromatic blend of premium spices crafted for fragrant, flavourful biryanis and pulao.", image:"biryani-masala.png", category:"masala"},
+        {name:"Sabji Masala", description:"A balanced everyday masala that brings out the best in all your vegetable dishes.", image:"sabji-masala.png", category:"masala"},
+        {name:"Pav Bhaji Masala", description:"Tangy, spicy blend that recreates the beloved Mumbai street-food pav bhaji at home.", image:"pav-bhaji-masala.png", category:"masala"},
+        {name:"Tea Masala", description:"Fragrant chai masala with cardamom, ginger and cinnamon for the perfect cup of tea.", image:"tea-masala.png", category:"masala"},
+        {name:"Sambar Masala", description:"South-Indian style masala for rich, tangy sambar bursting with authentic flavour.", image:"sambar-masala.png", category:"masala"},
+        {name:"Kolhapuri Masala", description:"Signature fiery Kolhapuri blend for those who love their food hot and full of character.", image:"kolhapuri-masala.png", category:"masala"},
+        {name:"Pickles", description:"Homemade pickles prepared in traditional oil and spices for a tangy, spicy kick.", image:"pickles.png", category:"food"},
+        {name:"Papad", description:"Crispy, thin papad made from quality lentils, perfect as a side or a snack.", image:"papad.png", category:"food"},
+        {name:"Ladoo", description:"Melt-in-the-mouth homemade ladoos made with pure ingredients and lots of love.", image:"ladoo.png", category:"food"},
+        {name:"Chutneys", description:"Flavour-packed dry chutneys made from roasted spices, peanuts and garlic.", image:"chutneys.png", category:"food"},
+        {name:"Other Homemade Products", description:"A range of other traditional homemade food products, made fresh on order.", image:"other-products.png", category:"food"}
+    ];
+    const features = [
+        ["bi-house-heart","100% Homemade"],["bi-gem","Premium Quality Ingredients"],
+        ["bi-droplet-half","No Artificial Colors"],["bi-book","Traditional Recipes"],
+        ["bi-shield-check","Hygienically Prepared"],["bi-emoji-smile","Rich Authentic Taste"],
+        ["bi-tag","Affordable Price"],["bi-truck","Fast Delivery"]
+    ];
+    const reviews = [
+        {name:"Sunita Deshmukh", location:"Pune", message:"The garam masala tastes exactly like my grandmother used to make. Pure, aromatic and completely homemade!", image:"reviewer-1.png", rating:5},
+        {name:"Rajesh Patil", location:"Kolhapur", message:"Ordered the Kolhapuri and kala masala for my restaurant. My customers keep asking what makes the food so special.", image:"reviewer-2.png", rating:5},
+        {name:"Priya Joshi", location:"Mumbai", message:"Fresh, hygienic and no artificial colours. The pickles and ladoo remind me of home. Highly recommended!", image:"reviewer-3.png", rating:5}
+    ];
+
+    const esc = (s) => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("productGrid").innerHTML = products.map(p => `
+        <div class="col-lg-3 col-md-4 col-sm-6 product-item reveal" data-name="${esc(p.name)}" data-category="${p.category}">
+            <div class="product-card">
+                <div class="img-wrap"><img src="/images/${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
+                <div class="card-body">
+                    <h5>${esc(p.name)}</h5>
+                    <p>${esc(p.description)}</p>
+                    <a class="btn btn-whatsapp w-100 mt-2" target="_blank" rel="noopener"
+                       href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hi Unique Masale, I would like to order: ' + p.name)}">
+                        <i class="bi bi-whatsapp me-1"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>`).join("");
+
+    document.getElementById("whyGrid").innerHTML = features.map(f => `
+        <div class="col-lg-3 col-md-6 reveal">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi ${f[0]}"></i></div>
+                <h5>${f[1]}</h5>
+            </div>
+        </div>`).join("");
+
+    document.getElementById("reviewGrid").innerHTML = reviews.map(r => `
+        <div class="col-lg-4 col-md-6 reveal">
+            <div class="review-card">
+                <div class="stars" aria-label="${r.rating} out of 5 stars">${'<i class="bi bi-star-fill"></i>'.repeat(r.rating)}</div>
+                <p>&ldquo;${esc(r.message)}&rdquo;</p>
+                <div class="reviewer">
+                    <img src="/images/${r.image}" alt="${esc(r.name)}" loading="lazy">
+                    <div>
+                        <p class="name">${esc(r.name)}</p>
+                        <p class="loc">${esc(r.location)}</p>
+                    </div>
+                </div>
+            </div>
+        </div>`).join("");
+</script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
