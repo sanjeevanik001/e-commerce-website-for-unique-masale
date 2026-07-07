@@ -12,7 +12,7 @@ import java.util.List;
 public class ReviewService {
 
     private final List<Review> reviews = List.of(
-            new Review("Sunita Deshmukh", "Pune",
+            new Review("Sunita Ram Deshmukh", "Pune",
                     "The garam masala tastes exactly like my grandmother used to make. Pure, aromatic and completely homemade!",
                     "reviewer-1.png", 5),
             new Review("Rajesh Patil", "Kolhapur",
